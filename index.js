@@ -10,6 +10,29 @@ const StringDecoder = require('string_decoder').StringDecoder;
 var config = require('./config');
 var fs = require('fs');
 
+var _data = require('./lib/data')
+
+// test
+// ----------create-----------
+// _data.create('test', 'newFile', {name: 'shuai', age: 23}, function(err, e) {
+//   console.log(err, e);
+// })
+// ----------read-----------
+// _data.read('test', 'newFile', function(err, data) {
+//   console.log(err, data);
+// })
+// ----------update-----------
+// _data.update('test', 'newFile', {name: 'yujie zhang', age: 23}, function(err, data) {
+//   console.log(err, data);
+// })
+// ----------delete-----------
+// _data.delete('test', 'newFile', function(err, data) {
+//   console.log(err, data);
+// })
+
+
+
+
 // Instatiate the HTTP server
 var httpServer = http.createServer(function(req, res) {
   unifiedServer(req, res)
