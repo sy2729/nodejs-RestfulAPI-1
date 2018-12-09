@@ -7,13 +7,17 @@ var environments = {}
 environments.staging = {
   'httpPort': 3000,
   'httpsPort': 3001,
-  'envName': 'staging'
+  'envName': 'staging',
+  'hashingSecret': 'thisISASecret',
+  'maxChecks': 5
 };
 
 environments.production = {
   'httpPort': 5000,
   'httpsPort': 5001,
-  'envName': 'production'
+  'envName': 'production',
+  'hashingSecret': 'thisISASecret',
+  'maxChecks': 5
 }
 
 // Determine which environemtn was passed as a command-line argument
